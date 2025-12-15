@@ -7,4 +7,4 @@
 $discard
 
 ! Keep and strongly boost Google Scholar
-$boost=10,site=ich.de
+$boost=10,site=ich.org
