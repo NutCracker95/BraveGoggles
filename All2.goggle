@@ -1,0 +1,24 @@
+! name: Google Scholar
+! description: Show only results from Google Scholar in Brave Search
+! public: true
+! author: Matthias Gysi
+
+! Change default so that anything NOT matching an instruction is removed
+$discard
+
+! Keep and strongly boost Google Scholar
+$site=pharmazeutische-zeitung.de
+$site=springermedizin.de
+$site=pei.de
+/en/news-events/whats-new/$site=ema.europa.eu
+/rapid/latest-press-releases/$site=europa.eu
+$site=ich.org
+$site=swissmedic.ch
+$site=pubmed.ncbi.nlm.nih.gov
+$site=nature.com
+$site=zbmed.de
+$site=sciencedirect.com
+$site=science.org
+$site=cochranelibrary.com
+$site=scholar.google.com
+$site=perplexity.ai
