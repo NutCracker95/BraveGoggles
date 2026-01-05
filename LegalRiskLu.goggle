@@ -1,0 +1,49 @@
+! name: Lux Legal & Procurement Risk
+! description: Filter for Luxembourgish legislation, EU directives, and top-tier legal analysis for procurement risk.
+! public: false
+! author: Legal Risk Analyst
+
+! 1. Discard all results by default to ensure a clean, authoritative list
+$discard
+
+! --- OFFICIAL LUXEMBOURG GOVERNMENT & REGULATORY BODIES ---
+! The official journal of law (Legilux) and Parliament (ChD)
+$site=legilux.public.lu
+$site=chd.lu
+
+! Regulators: ILR (Telecom/Energy), CNPD (Data/AI), CSSF (Finance/Sanctions)
+$site=ilr.lu
+$site=cnpd.public.lu
+$site=cssf.lu
+$site=finance.gouvernement.lu
+$site=lbr.lu
+$site=cc.lu
+
+! --- EUROPEAN UNION SOURCES ---
+! Essential for tracking Directives (NIS2, CSDDD) before they are transposed
+$site=eur-lex.europa.eu
+$site=curia.europa.eu
+$site=berec.europa.eu
+$site=edpb.europa.eu
+
+! --- TOP TIER LAW FIRMS (LUXEMBOURG OFFICES) ---
+! These firms produce high-quality "Client Alerts" and analysis on new bills
+$site=arendt.com
+$site=elvingerhoss.lu
+$site=cliffordchance.com
+$site=nautadutilh.com
+$site=baker-mckenzie.com
+$site=loyensloeff.com
+$site=linklaters.com
+
+! --- CONSULTING & RISK AUDIT ---
+! For operational risk frameworks and supply chain audits
+$site=deloitte.com/lu
+$site=pwc.lu
+$site=kpmg.lu
+$site=ey.com/lu
+
+! --- INDUSTRY BODIES ---
+! Telecom specific standards and risk
+$site=gsma.com
+$site=etsi.org
